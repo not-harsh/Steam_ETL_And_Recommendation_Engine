@@ -140,7 +140,10 @@ The project consists of three main Python scripts:
    ```
 
 3. **Configure Airflow**:
-   - Copy `steam_dag.py` and `steam_etl.py` to the Airflow DAGs folder (e.g., `~/airflow/dags`).
+   - Copy `steam_dag.py` to the Airflow DAGs folder (e.g., `~/airflow/dags/steam_dag.py`).
+     <img width="2735" height="1509" alt="image" src="https://github.com/user-attachments/assets/dc8918f5-ffb3-45b6-b2a6-2574eaf27ba0" />
+   - Copy `steam_etl.py` to the Airflow DAGs folder (e.g., `~/airflow/plugins/steam_etl.py`).
+     <img width="2763" height="1510" alt="image" src="https://github.com/user-attachments/assets/95d7f989-a419-4e4a-9fd6-87f896be290b" />
    - Set up the `google_cloud_default` connection in Airflow with your GCP credentials.
    - Ensure the GCS bucket and BigQuery dataset exist.
 
