@@ -5,6 +5,7 @@ ETL pipeline for Steam game data using Apache Airflow, Google Cloud (BigQuery, G
 <img width="2879" height="1799" alt="image" src="https://github.com/user-attachments/assets/b820e54a-cab8-4191-87f6-ab8a9835ecb3" />
 
 
+<img width="2878" height="1799" alt="image" src="https://github.com/user-attachments/assets/3a0796aa-d507-481b-8ee7-b3df5155a922" />
 
 
 
