@@ -2,6 +2,12 @@
 ETL pipeline for Steam game data using Apache Airflow, Google Cloud (BigQuery, GCS), and SteamSpy API, with a Streamlit-based recommendation engine and Looker Studio dashboard for game analytics and personalized recommendations.
 
 
+<img width="2879" height="1799" alt="image" src="https://github.com/user-attachments/assets/b820e54a-cab8-4191-87f6-ab8a9835ecb3" />
+
+
+
+
+
 ## Project Overview
 
 This project implements an **ETL (Extract, Transform, Load) pipeline** to collect, process, and store Steam game data, followed by a **recommendation engine** to provide game recommendations based on genres and tags. The pipeline leverages **Apache Airflow** for orchestration, **Google Cloud Platform (GCP)** services (Google Cloud Storage and BigQuery) for data storage, and **Streamlit** for an interactive user interface. The goal is to extract game data from the SteamSpy API, maintain a historical record using Slowly Changing Dimension (SCD) Type 2, and enable users to find similar games via a recommendation system.
