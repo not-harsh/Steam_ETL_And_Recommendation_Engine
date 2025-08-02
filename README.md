@@ -114,46 +114,6 @@ The project consists of three main Python scripts:
 - **SteamSpy API**: No API key required, but rate limits apply (handled in code).
 - **Looker Studio**: Access to the dashboard at the specified URL.
 
-### Installation
-1. **Clone the Repository**:
-   ```bash
-   git clone <repository_url>
-   cd <repository_directory>
-   ```
-
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   Create a `requirements.txt` with:
-   ```
-   requests
-   google-cloud-storage
-   google-cloud-bigquery
-   pandas
-   scikit-learn
-   streamlit
-   plotly
-   seaborn
-   matplotlib
-   streamlit-components
-   ```
-
-3. **Configure Airflow**:
-   - Copy `steam_dag.py` to the Airflow DAGs folder (e.g., `~/airflow/dags/steam_dag.py`).
-     <img width="2735" height="1509" alt="image" src="https://github.com/user-attachments/assets/dc8918f5-ffb3-45b6-b2a6-2574eaf27ba0" />
-   - Copy `steam_etl.py` to the Airflow DAGs folder (e.g., `~/airflow/plugins/steam_etl.py`).
-     <img width="2763" height="1510" alt="image" src="https://github.com/user-attachments/assets/95d7f989-a419-4e4a-9fd6-87f896be290b" />
-   - Set up the `google_cloud_default` connection in Airflow with your GCP credentials.
-   - Ensure the GCS bucket and BigQuery dataset exist.
-
-4. **Run the Recommendation Engine**:
-   ```bash
-   streamlit run recommendation_engine.py
-   ```
-
-5. **Access Looker Studio Dashboard**:
-   - Ensure access to the dashboard URL: `https://lookerstudio.google.com/embed/reporting/9718b5a1-7e85-48cf-abfe-78d10b499953/page/5SQSF`.
 
 ### Running the Pipeline
 1. **Trigger the Airflow DAG**:
